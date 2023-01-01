@@ -20,11 +20,11 @@ public class userServiceImpl implements userService{
 	
 	//Utils newUtils;
 	
-	newUtils NU;
+	newUtils NU = new newUtils(); // Instance created, Autowired not working
 	
 	public userServiceImpl() {}
 
-	
+
 	@Autowired
 	public userServiceImpl(newUtils utils) {
 		this.NU = utils;
@@ -42,6 +42,7 @@ public class userServiceImpl implements userService{
 		//String userID = UUID.randomUUID().toString();  // Generated Random character string via line code
 		
 		//String userID = utils.generateUserId();		//Generates random characters via Dependencies injection via constructor
+		
 		
 		String UserID = NU.generatedUserID();
 		returnValue.setUserID(UserID); 

@@ -24,7 +24,9 @@ dependencies {
 	//implementation 'org.springframework:spring-core:4.0.5.RELEASE'
 	
 	// https://mvnrepository.com/artifact/org.springframework/spring-core
-	implementation group: 'org.springframework', name: 'spring-core', version: '6.0.3'
+	//implementation group: 'org.springframework', name: 'spring-core', version: '6.0.3'
+	// https://mvnrepository.com/artifact/org.springframework/spring-context
+	implementation 'org.springframework:spring-context:6.0.3'
 	
     //implementation 'org.springframework:spring-webmvc:4.0.5.RELEASE'
     

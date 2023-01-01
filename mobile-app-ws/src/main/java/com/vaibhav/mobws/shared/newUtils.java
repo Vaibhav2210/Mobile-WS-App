@@ -6,8 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class newUtils {
-	
-	public String generatedUserID() {
+		public String generatedUserID() {
 		return UUID.randomUUID().toString();
 	}
 
